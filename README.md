@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="screenshots/home-page.png" alt="AnimeGo preview" width="640" style="max-width:100%; height:auto;" />
+  <img src="images\webpage.png" alt="AnimeGo preview" width="640" style="max-width:100%; height:auto;" />
 </p># AnimeGo
 
 ## وصف المشروع
