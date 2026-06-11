@@ -69,7 +69,7 @@ It combines movies, anime series, episode schedules, blog posts, manga content, 
 ### 4. صفحة المعرض (Gallery)
 
 ![Gallery Page](screenshotd/galleryPage.png)
-![Gallery Page](screenshotd/galleryPage(2).png)
+![Gallery Page](screenshotd/gallerypage(2).png)
 
 > معرض صور الأنمي.
 
