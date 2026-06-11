@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0; 
+    background-color: rgb(195, 197, 218); 
+   
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  z-index:3;
+  }
+/*   */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    z-index: 99;
+}
+    .logo{
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: 700;
+        font-size: 1.8em;
+        padding:20px;
+        margin-left: 0px;
+    }
+    
+    .navigation a {
+        position: relative;
+        font-size: 0.9em;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 20px;/**/
+    }
+    
+    .navigation a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        border-radius: 5px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+    
+    .navigation a:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    #saveNav{
+        color: #fff;
+       
+    }
+
+  
+
+
+
+#main-Poster{
+  padding: 70px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*background-color: rgb(0, 0, 0);*/
+  background:rgb(0, 3, 37);
+  background-position: right top;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  
+}
+
+#title{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-left: 130px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#title-left p{
+
+    font-size: 14px;
+    font-weight: 600;
+    color:rgb(237, 245, 11);
+}
+#title-left h1{
+
+    font-size: 40px;
+    color:rgb(249, 249, 249);
+}
+#title-right a{
+    text-decoration: none;
+    margin-left: 10px;
+    color:rgb(251, 249, 249);
+    background-color: #21232b;
+    padding: 15px;
+    border-radius: 50px;
+    border: solid #333 2px;
+    transform: 0.5s;
+}
+#title-right a:focus{ /* the diffrence between hover and focus , focus change color when i click the title*/
+    border: solid rgb(237, 245, 11) 2px;
+}
+#card{
+   margin-top: 20px;
+   margin-left: 30px;
+   position:relative;
+   overflow: hidden;
+   width: 300px;
+   height: 400px;
+   border-radius: 14px 12px;
+}
+#poster{
+  position: relative;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+
+
+}
+#poster image{
+    position :absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: 0,5s;
+}
+#datalest{
+    position: absolute;
+    bottom: -100%;
+    left:0;
+    width: 100%;
+    height: auto;
+    padding: 1em 1.5em 2em; /* size of card */
+    backdrop-filter: blur(16px);
+    background-color: rgba(30, 19, 57, 0.234);
+    transition: 0.5s;
+
+}
+ #card:hover #datalest{
+   bottom: 0;
+
+}
+
+#star{
+  display: inline-block;  
+}
+
+#star input{
+   display: none; /* hide the input*/
+  }
+
+  #star label{
+   float: right;
+   cursor: pointer;
+   color: #fff;
+   transition: 0.3s;
+  }
+
+
+#star label::before{
+    content: "\2605";
+    font-size: 30px;
+}
+#star input:checked ~label,
+ #star label:hover ,
+ #star label:hover ~label{ /* from first star to last star*/
+  color: #e4a40e;
+  transition: 0.3s;
+ }
+  
+ 
+
+ #button{
+    float: right;
+   
+ }
+ #button a{
+    text-decoration: none;
+    font-size: 13px;
+    font-style: Bold;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #4981e1;
+    color: #efe9eed5;
+ }
+ #button a:focus{
+ border: solid rgb(185, 234, 7) 3px;
+ 
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+}
+.card-footer a {
+    margin-right: 10px;
+}
+.material-symbols-outlined {
+    font-size: 50px; /* زيادة حجم الأيقونة */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.material-symbols-outlined:hover {
+    color: yellow; /* تغيير اللون عند النقر */
+    border: 2px solid yellow; /* إضافة حدود عند النقر */
+    border-radius: 50%; /* جعل الحدود دائرية */
+    padding: 5px; /* إضافة بعض التباعد داخل الحدود */
+}
+.material-symbols-outlined:active {
+    background-color: yellow; /* تغيير لون الخلفية عند النقر */
+    color: black; /* تغيير لون الأيقونة إلى أسود */
+    border: 2px solid yellow; /* إضافة حدود عند النقر */
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding:  7px;
+    margin-right: auto; /* This will push the search bar to the left */
+}
+
+.search-box {
+    border: none;
+    background: transparent;
+    outline: none ;
+    padding: 5px 10px;
+    width: 150px;
+    transition: width 0.8s ease-in-out;
+}
+
+.search-box:focus {
+    width: 200px;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}

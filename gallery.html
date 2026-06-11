@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/galleryStyle.css" >
+            <link rel="stylesheet" href="css/header.css">
+        <title>Anime</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rREHjGdY/yF0eR2Q/m8+a6nsMwhMDmZ68QqEVv1q8WRS6qUXhj5C5czMIqDd1KFJ" crossorigin="anonymous">
+
+       
+    </head>
+   
+    <body>
+       
+        <header>
+            <h2 class="logo">AnimeGo</h2>
+        <button class="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+            <div class="search-container">
+                <input type="text" placeholder="what are you looking for?" class="search-box">
+                <i class="material-symbols-outlined search-icon">search</i>
+              </div>
+            <nav class="navigation">
+                <a href="Home.html">Home</a>
+                <a href="Movie.html">Movies</a>
+                <a href="series.html">Series</a>
+                <a href="gallery.html">Backgrounds</a>
+                <a href="Blogs.html">Blogs</a>
+                <a href="episodesDate.html">Episodes dates</a>
+                <a href="TopManga.html">Manga</a>
+            </nav>
+        </header>
+         
+       <div class="gallery-container">
+
+        <div class="gallery-item" data-index="1"><img src="images/gallery/photo10jpg.jpg"  width="300px" height="400px"></div>
+        <div class="gallery-item" data-index="2"><img src="images/gallery/photo11jpg.jpg" width="300px" height="400px"></div>
+        <div class="gallery-item" data-index="3"><img src="images/gallery/photo4jpg.jpg" width="300px" height="400px"></div>
+        <div class="gallery-item" data-index="4"><img src="images/gallery/photo5jpg.jpg" width="300px" height="400px"></div>
+        <div class="gallery-item" data-index="5"><img src="images/gallery/photo6jpg.jpg" width="300px" height="400px"></div>
+        <div class="gallery-item" data-index="6"><img src="images/gallery/photo7jpg.jpg"width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="7"><img src="images/gallery/photo8jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="8"><img src="images/gallery/23.jpg"width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="9"><img src="images/gallery/photo9jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="10"><img src="images/gallery/photo12jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="11"><img src="images/gallery/photo13jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="12"><img src="images/gallery/14jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="13"><img src="images/gallery/21jpg.jpg"width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="14"><img src="images/gallery/22.jpg"width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="15"><img src="images/gallery/15jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="16"><img src="images/gallery/16jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="17"><img src="images/gallery/17jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="18"><img src="images/gallery/18jpg.jpg"width="300px" height="400px"  ></div>
+        <div class="gallery-item" data-index="19"><img src="images/gallery/19jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="20"><img src="images/gallery/20.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="21"><img src="images/gallery/photo1.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="22"><img src="images/gallery/photo2jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="23"><img src="images/gallery/photo3jpg.jpg" width="300px" height="400px" ></div>
+        <div class="gallery-item" data-index="24"><img src="images/gallery/24.jpg" width="300px" height="400px" ></div>
+
+     </div>
+       
+     <script>
+        const galleryItem=document.getElementsByClassName("gallery-item");
+
+        const lightBoxConatainer =document.createElement("div");
+
+        const lightboxContent =document.createElement("div");
+
+        const lightBoxImg =document.createElement("img");
+
+        const lightBoxPrev =document.createElement("div");
+
+        const lightBoxNext =document.createElement("div");
+
+
+       lightBoxConatainer.classList.add('lightbox');
+       lightboxContent.classList.add('lightbox-content');
+       lightBoxPrev.classList.add("fa", "fa-angle-left", "lightbox-prev");
+       lightBoxNext.classList.add("fa", "fa-angle-right", "lightbox-next");
+      
+        lightBoxConatainer.appendChild(lightboxContent);
+        lightboxContent.appendChild(lightBoxImg);
+        lightboxContent.appendChild(lightBoxPrev);
+        lightboxContent.appendChild(lightBoxNext);
+        document.body.appendChild(lightBoxConatainer);
+
+        let index=1;
+
+        function showLightBox(n){
+           if(n > galleryItem.length){
+              index= 1;
+           } else if (n < 1){
+            index =galleryItem.length;
+           }
+          
+           let imageLocation =galleryItem[index-1].children[0].getAttribute("src");
+           lightBoxImg.setAttribute("src", imageLocation);
+        }
+
+        function currentImage(){
+            lightBoxConatainer.style.display = "block";
+            
+            let imgeIndex = parseInt(this.getAttribute("data-index"));
+            showLightBox(index = imgeIndex);
+            
+        }
+        for(let i=0; i<galleryItem.length;i++){
+            galleryItem[i].addEventListener("click",currentImage)
+        }
+
+        function sliderImage(n){
+            showLightBox(index +=n);
+        }
+
+        function prevImage(){
+            sliderImage(1);
+        }
+
+        function nextImage(){
+            sliderImage(-1);
+        }
+
+        lightBoxPrev.addEventListener("click",prevImage);
+        lightBoxNext.addEventListener("click",nextImage);
+
+        //close lightBox
+
+        function closeLightBox(){
+            if(this === event.target){
+                lightBoxConatainer.style.display= "none";
+            }
+        }
+
+        lightBoxConatainer.addEventListener("click", closeLightBox);
+
+     </Script>
+        <script src="js/script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blogs</title>
+<link rel="stylesheet" href="css/BlogsStyle.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+
+
+<header>
+    <h2 class="logo">AnimeGo</h2>
+        <button class="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+    <nav class="navigation">
+      <a href="Home.html">Home</a>
+      <a href="Movie.html">Movies</a>
+      <a href="series.html">Series</a>
+      <a href="gallery.html">Backgrounds</a>
+      <a href="Blogs.html">Blogs</a>
+      <a href="episodesDate.html">Episodes dates</a>
+      <a href="TopManga.html">Manga</a>
+          
+        
+    </nav>
+  </header>
+
+<img src="images/webpage.png" style="position: fixed; width: 100%; height: 100%">
+
+  <div class="rectangle">
+
+ <img class="bottom-image" src="images/buttom.png" alt="click here for display blogs pictures"   onclick="showAdditionalImages()">
+
+    <div class="additional-images" id="additionalImages">
+
+<a href="JujuPage.html">
+      <img class="cB"  src="images/jjk html.png" alt="jujutsu page"></a>
+
+
+
+<a href="OnePiece.html">
+      <img class="cB" src="images/one piece html.png" alt="one piece page"></a>
+
+
+
+<a href="AttackPage.html">
+      <img class="cB" src="images/eren html.png" alt="attack page"></a>
+  </div>
+
+
+<h1>ANIME BLOGS </h1>
+
+    <p>You can find in this page the most popular anime and their news!!   list of best anime for 2021-2023 you can read about it with reviews and opinions of anime fans so  Press on the lets go icon to find the blogs.</p>
+   
+</div>
+<script>
+    function showAdditionalImages() {
+      var additionalImagesContainer = document.getElementById("additionalImages");
+      if (additionalImagesContainer) {
+        additionalImagesContainer.style.display = "block";
+additionalImagesContainer.offsetHeight;
+additionalImagesContainer.classList.add("fade-in");
+      }
+    }
+
+  </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

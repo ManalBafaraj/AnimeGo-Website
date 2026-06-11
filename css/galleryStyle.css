@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   /* background: url('webpage.png') no-repeat;*/
+   background:rgb(0, 3, 37);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+#main-Poster{
+    padding: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    
+  }
+ 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    z-index: 99;
+}
+    .logo{
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: 700;
+        font-size: 1.8em;
+        padding:20px;
+        margin-left: 0px;
+    }
+    
+    .navigation a {
+        position: relative;
+        font-size: 0.9em;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 20px;/**/
+    }
+    
+    .navigation a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        border-radius: 5px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+    
+    .navigation a:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 94%;
+    padding: 70px;
+    box-shadow: 0 0 3px 0 #000000;
+    margin-top: 80px;
+    margin: 0px auto;
+}
+
+.gallery-item:hover {
+    opacity: 1;
+}
+
+
+
+.gallery-item {
+    flex-basis: 32.7%;
+    margin-bottom: 20px;
+    height: 400px; /* Set a fixed height for the gallery items */
+    overflow: hidden;
+    
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the entire image is visible without cropping or scaling */
+    border: 6px solid #fff;
+}
+
+
+
+
+
+.lightbox {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8); /* Use rgba to set a semi-transparent black background */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    z-index: 1003; /* Ensure the lightbox appears above the fixed header */
+}
+
+.lightbox-content {
+    position: relative;
+    width: 65%;
+    height: 58%;
+    margin: 5% auto;
+    margin-top: 100px;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+
+    border: 6px solid #fff ;
+    object-fit: cover;
+}
+
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    font-size: 35px; /* Adjust the font size as needed */
+    color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1004; /* Ensure the arrows appear above the lightbox background */
+}
+
+.lightbox-prev::before {
+    content: '\2190'; /* Unicode character for left arrow */
+}
+
+.lightbox-next::before {
+    content: '\2192'; /* Unicode character for right arrow */
+}
+
+.lightbox-prev {
+    left: 10px;
+}
+
+.lightbox-next {
+    right: 10px;
+}
+
+@media(max-width:767px){
+    .gallery-container{
+        width: 100%;
+    }
+    .gallery-item{
+        flex-basis: 49.80%;
+        margin-bottom: 3px;
+    }
+    .lightbox-content{
+        width: 80%;
+        height:60% ;
+        margin: 15% auto;
+    }
+}
+
+
+/**/
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding:  7px;
+    margin-right: auto; /* This will push the search bar to the left */
+}
+
+.search-box {
+    border: none;
+    background: transparent;
+    outline: none ;
+    padding: 5px 10px;
+    width: 150px;
+    transition: width 0.8s ease-in-out;
+}
+
+.search-box:focus {
+    width: 200px;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}

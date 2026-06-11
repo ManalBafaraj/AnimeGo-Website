@@ -1,0 +1,36 @@
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Node (if added in future)
+node_modules/
+package-lock.json
+npm-debug.log
+
+# IDE
+.idea/
+.sublime-workspace
+*.sublime-project
+
+# Environment files
+.env
+.env.local
+
+# Build/Output files
+dist/
+build/
+*.min.js
+*.min.css
+
+# Logs
+*.log
+
+# Cache
+.cache/
