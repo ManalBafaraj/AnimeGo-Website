@@ -52,7 +52,7 @@ It combines movies, anime series, episode schedules, blog posts, manga content, 
 
 ### 2. صفحة الأفلام (Movies)
 
-![Movies Page](screenshots/movies-page.png)
+![Movies Page](screenshotd/moviePage.png)
 
 > قسم عرض الأفلام.
 
