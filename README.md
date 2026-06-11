@@ -76,7 +76,7 @@ It combines movies, anime series, episode schedules, blog posts, manga content, 
 ### 5. صفحة المدونات (Blogs)
 
 ![Blogs Page](screenshotd/blogsPage.png)
-
+![Blogs Page](screenshotd/blogsPage(2).png)
 > صفحة المدونات والمقالات.
 
 ### 6. صفحة مواعيد الحلقات (Episodes dates)
@@ -86,8 +86,6 @@ It combines movies, anime series, episode schedules, blog posts, manga content, 
 > صفحة عرض مواعيد الحلقات.
 
 ### 7. صفحة الحفظ (Save)
-
-![Save Page](screenshots/save-page.png)
 
 > صفحة حفظ العناصر المفضلة.
 
