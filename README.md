@@ -1,4 +1,4 @@
-<img width="959" height="499" alt="image" src="https://github.com/user-attachments/assets/800cdb38-1df5-4d24-89ee-56f4c92362c2" /># AnimeGo
+# AnimeGo
 
 ## وصف المشروع
 
