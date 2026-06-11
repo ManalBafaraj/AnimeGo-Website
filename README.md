@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="images/webpage.png" alt="AnimeGo preview" style="width:200; max-width:98; max-height:200; object-fit:cover;" />
-</p> 
 # AnimeGo
 
 ## وصف المشروع
