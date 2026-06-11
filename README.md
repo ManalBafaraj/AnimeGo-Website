@@ -1,4 +1,4 @@
-# AnimeGo
+<img width="959" height="499" alt="image" src="https://github.com/user-attachments/assets/800cdb38-1df5-4d24-89ee-56f4c92362c2" /># AnimeGo
 
 ## وصف المشروع
 
@@ -46,8 +46,12 @@ It combines movies, anime series, episode schedules, blog posts, manga content, 
 
 ### 1. الصفحة الرئيسية (Home)
 
-![Home Page](screenshots/home-page.png)
+![Home Page](screenshotd/homePage.png)
 
+
+
+
+![Login Page](screenshotd/loginPage.png)
 > الصفحة الرئيسية مع التنقل الكامل وزر الدخول.
 
 ### 2. صفحة الأفلام (Movies)
@@ -58,25 +62,26 @@ It combines movies, anime series, episode schedules, blog posts, manga content, 
 
 ### 3. صفحة المسلسلات (Series)
 
-![Series Page](screenshots/series-page.png)
+![Series Page](screenshotd/seriesPage.png)
 
 > قسم عرض المسلسلات.
 
 ### 4. صفحة المعرض (Gallery)
 
-![Gallery Page](screenshots/gallery-page.png)
+![Gallery Page](screenshotd/galleryPage.png)
+![Gallery Page](screenshotd/galleryPage(2).png)
 
 > معرض صور الأنمي.
 
 ### 5. صفحة المدونات (Blogs)
 
-![Blogs Page](screenshots/blogs-page.png)
+![Blogs Page](screenshotd/blogsPage.png)
 
 > صفحة المدونات والمقالات.
 
 ### 6. صفحة مواعيد الحلقات (Episodes dates)
 
-![Episodes Dates Page](screenshots/episodes-dates-page.png)
+![Episodes Dates Page](screenshotd/EDPage.png)
 
 > صفحة عرض مواعيد الحلقات.
 
