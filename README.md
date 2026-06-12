@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/webpage.png" alt="AnimeGo preview" style="width:100%; max-width:960px; max-height:260px; object-fit: cover;" />
+</p>
+
 # AnimeGo
 
 ## وصف المشروع
@@ -37,6 +41,7 @@ It combines movies, anime series, episode schedules, blog posts, manga content, 
 - `gallery.html` - صفحة المعرض.
 - `Blogs.html` - صفحة المدونات.
 - `episodesDate.html` - صفحة مواعيد الحلقات.
+- `TopManga.html` - صفحة المانجا.
 - `savePage.html` - صفحة الحفظ/المفضلة.
 - `css/` - ملفات التصميم.
 - `js/script.js` - تفاعل القائمة ونوافذ الدخول.
@@ -79,13 +84,19 @@ It combines movies, anime series, episode schedules, blog posts, manga content, 
 ![Blogs Page](screenshotd/blogsPage(2).png)
 > صفحة المدونات والمقالات.
 
-### 6. صفحة مواعيد الحلقات (Episodes dates)
+### 6. صفحة المانجا (Manga)
+
+![Manga Page](screenshotd/MangaPage.png)
+
+> صفحة تعرض أفضل مانجا مع معلومات المؤلف والنوع والتقييم.
+
+### 7. صفحة مواعيد الحلقات (Episodes dates)
 
 ![Episodes Dates Page](screenshotd/EDPage.png)
 
 > صفحة عرض مواعيد الحلقات.
 
-### 7. صفحة الحفظ (Save)
+### 8. صفحة الحفظ (Save)
 
 > صفحة حفظ العناصر المفضلة.
 
